@@ -1,0 +1,13 @@
+--- ../opencv-3.4.0/modules/python/CMakeLists.txt	2017-12-22 22:46:21.000000000 +0300
++++ ./modules/python/CMakeLists.txt	2018-02-10 14:22:04.534748368 +0300
+@@ -5,8 +5,8 @@
+ add_subdirectory(bindings)
+ 
+ if(ANDROID OR APPLE_FRAMEWORK OR WINRT)
+-  set(__disable_python2 ON)
+-  set(__disable_python3 ON)
++  #set(__disable_python2 ON)
++  #set(__disable_python3 ON)
+ elseif(BUILD_opencv_world OR (WIN32 AND CMAKE_BUILD_TYPE STREQUAL "Debug"))
+   if(NOT DEFINED BUILD_opencv_python2)
+     set(__disable_python2 ON)

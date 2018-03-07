@@ -1,0 +1,10 @@
+--- ../opencv-3.4.0/modules/python/common.cmake	2017-12-22 22:46:21.000000000 +0300
++++ ./modules/python/common.cmake	2018-02-14 00:55:54.601325545 +0300
+@@ -96,6 +96,7 @@
+ 
+ if(NOT INSTALL_CREATE_DISTRIB AND DEFINED ${PYTHON}_PACKAGES_PATH)
+   set(__dst "${${PYTHON}_PACKAGES_PATH}")
++  message(STATUS "PYTHON_PACKAGES_PATH: " ${__dst})
+ endif()
+ if(NOT __dst)
+   if(DEFINED ${PYTHON}_VERSION_MAJOR)
