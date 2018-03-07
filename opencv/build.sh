@@ -1,6 +1,6 @@
 TERMUX_PKG_VERSION=3.4.0
 TERMUX_PKG_REVISION=0
-TERMUX_PKG_SRCURL=file:///home/builder/termux-packages/opencv-3.4.0.tar.gz
+TERMUX_PKG_SRCURL=https://github.com/opencv/opencv/archive/3.4.0.tar.gz
 
 termux_step_pre_configure() {
 	TERMUX_PKG_EXTRA_CONFIGURE_ARGS="-DCMAKE_BUILD_TYPE=RELEASE \
