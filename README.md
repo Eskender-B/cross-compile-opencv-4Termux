@@ -13,7 +13,9 @@ Or do the following to produce the deb package:
 ## Installation
 
 Inside termux you can do:
-```bash dpkg -i /path/to/deb/file```
+
+```dpkg -i /path/to/deb/file```
+
 or something like (less recommended):
 
-```bash dpkg -x /path/to/deb/file $PREFIX```
+```dpkg -x /path/to/deb/file $PREFIX```
